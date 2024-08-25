@@ -1,0 +1,8 @@
+{
+    "frecuencias": [
+      {"valor": "anual", "texto": "Anual"},
+      {"valor": "semestral", "texto": "Semestral"},
+      {"valor": "mensual", "texto": "Mensual"}
+    ]
+  }
+  

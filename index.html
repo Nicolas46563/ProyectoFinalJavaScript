@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Inversiones</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 id="bienvenida">Bienvenido a la Calculadora de Inversiones</h1>
+      <img src="assets/images/banner.jpg" alt="Inversiones" class="banner">
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <form id="formulario">
+        <div class="form-group">
+          <label for="montoInicial">Monto Inicial:</label>
+          <input type="number" id="montoInicial" required>
+        </div>
+        <div class="form-group">
+          <label for="tasaAnual">Tasa de Interés Anual (%):</label>
+          <input type="number" id="tasaAnual" required>
+        </div>
+        <div class="form-group">
+          <label for="plazo">Plazo (años):</label>
+          <input type="number" id="plazo" required>
+        </div>
+        <div class="form-group">
+          <label for="frecuenciaCapitalizacion">Frecuencia de Capitalización:</label>
+          <select id="frecuenciaCapitalizacion" required>
+            <option value="anual">Anual</option>
+            <option value="semestral">Semestral</option>
+            <option value="mensual">Mensual</option>
+          </select>
+        </div>
+        <!-- Grupo de botones -->
+        <div class="form-group button-group">
+          <button type="button" id="btnCalcular" class="btn">Calcular</button>
+          <button type="button" id="btnLimpiar" class="btn">Limpiar</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="resultados" class="results-section">
+      <h2>Resultados de la Inversión</h2>
+      <p>Monto Final: <span id="montoFinal"></span></p>
+      <p>Intereses Ganados: <span id="interesesGanados"></span></p>
+    </section>
+
+    <!-- Sección para notificaciones -->
+    <section id="notificaciones" class="notifications-section"></section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Simulador de Inversiones. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Inclusión de archivos JS -->
+  <script src="assets/js/formulario.js"></script>
+  <script src="assets/js/inversiones.js"></script>
+  <script src="assets/js/utils.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+
+</body>
+</html>
